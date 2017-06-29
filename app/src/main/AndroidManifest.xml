@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ferrannoguera.controlmascotes" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AfegirMasc"
+            android:label="@string/title_activity_afegir_masc" >
+        </activity>
+        <activity
+            android:name=".Calendari"
+            android:label="@string/title_activity_calendari" >
+        </activity>
+        <activity
+            android:name=".DadesMasc"
+            android:label="@string/title_activity_dades_masc" >
+        </activity>
+        <activity
+            android:name=".LlistaAnimals"
+            android:label="@string/title_activity_llista_animals" >
+        </activity>
+        <activity
+            android:name=".Editar"
+            android:label="@string/title_activity_editar" >
+        </activity>
+        <activity
+            android:name=".AfegirCita"
+            android:label="@string/title_activity_afegir_cita" >
+        </activity>
+        <activity
+            android:name=".OnlyEdit"
+            android:label="@string/title_activity_editar2" >
+        </activity>
+        <activity
+            android:name=".LlistaCites"
+            android:label="@string/title_activity_llista_cites" >
+        </activity>
+        <activity
+            android:name=".AboutANDHelp"
+            android:label="@string/title_activity_about_andhelp" >
+        </activity>
+    </application>
+
+</manifest>

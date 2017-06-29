@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ferrannoguera.controlmascotes.DadesMasc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/t1"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_toEndOf="@+id/textView13"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/t2"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_alignStart="@+id/t1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/t3"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignStart="@+id/t2"
+        android:textIsSelectable="false"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/t4"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/t3"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/t5"
+        android:layout_below="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOM:"
+        android:id="@+id/textView10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:textColor="#ff000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nº CHIP:"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/t1"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_marginTop="25dp"
+        android:textColor="#ff000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIPO: "
+        android:id="@+id/textView12"
+        android:layout_below="@+id/t2"
+        android:layout_alignStart="@+id/textView11"
+        android:textColor="#ff000000"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NACIMIENTO:"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/t3"
+        android:layout_alignStart="@+id/textView12"
+        android:textColor="#ff000000"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginTop="25dp"
+        android:text="T. ESPECIAL:"
+        android:textSize="20dp"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/t6"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_alignStart="@+id/t4"
+        android:layout_above="@+id/gotollcites"
+        android:layout_alignEnd="@+id/button5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VEURE CITES"
+        android:id="@+id/gotollcites"
+        android:layout_below="@+id/t5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atras"
+        android:id="@+id/Back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="back" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:id="@+id/button5"
+        android:layout_marginLeft="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="editar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ELIMINAR"
+        android:id="@+id/eliminar"
+        android:layout_marginRight="125dp"
+        android:onClick="deletissim"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
